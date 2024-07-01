@@ -1,3 +1,4 @@
+<script>
 const easinessSelect = document.getElementById('easiness');
 const whyForEasiness = document.getElementById('why-for-easiness');
 easinessSelect.addEventListener('change', () => {
@@ -8,4 +9,4 @@ easinessSelect.addEventListener('change', () => {
     whyForEasiness.required = false;
   }
 });
-
+</script>
