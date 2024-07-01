@@ -180,8 +180,9 @@
     <script>
   const easinessSelect = document.getElementById('easiness');
   const whyForEasiness = document.getElementById('why-for-easiness');
-  easinessSelect.addEventListener('change', () => {
-    const selectedValue = easinessSelect.value;
+ easinessSelect.addEventListener('change', () => {
+  console.log("The easiness select value has changed!");{
+       const selectedValue = easinessSelect.value;
     console.log(`Selected value: ${selectedValue}`);
     if (selectedValue === 'so-so' || selectedValue === 'a bit difficult' || selectedValue === 'very difficult') {
       whyForEasiness.required = true;
