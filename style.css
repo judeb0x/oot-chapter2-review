@@ -10,7 +10,7 @@ body {
   max-height: 100vh;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-}
+
 
 button[type="submit"] {
    position: center;
@@ -71,7 +71,7 @@ p2 {
 }
 
 
-li, .flaws {
+li {
   color: #522A65 !important;
   font-size: 1.5em;
   width: 100%;
@@ -86,41 +86,44 @@ input[type="text"] {
   text-align: left;
 }
 
-.extra-info {
-  color: #522A65 !important;
-font-size: 1.5em;
-padding-top: 10px;
-width: auto;
-font-family: Proza Libre, sans-serif;
-text-align: left;
-}
 
 textarea {
   height: 75px;
   width: 400px;
 }
 
-.comments, .why-for-easiness, .add-adjective, .plothole, .who-other {
+.comments, .why-for-easiness, .add-adjective, .plothole, .who-other, .why-for-inaccuracy, .flaws {
  color: #522A65 !important;
 font-size: 1.2em;
 padding-top: 10px;
-padding-left: 20px;
+padding-left: 0px;
+width: auto;
+font-family: Proza Libre, sans-serif;
+text-align: left;
+font-style: italic;
+  
+}
+
+.why-for-inaccuracy {
+  color: #522A65 !important;
+font-size: 1.2em;
+padding-top: 10px;
+padding-left: 50px;
 width: auto;
 font-family: Proza Libre, sans-serif;
 text-align: left;
 font-style: italic;
 }
 
-span {
- color: #8f729b !important;
+.flaws {
+   color: #522A65 !important;
 font-size: 1em;
 padding-top: 10px;
+padding-left: 0px;
 width: auto;
 font-family: Proza Libre, sans-serif;
 text-align: left;
 font-style: italic;
- 
-  
-  
+}  
 
     
