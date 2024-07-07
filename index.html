@@ -3,6 +3,7 @@
  <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet" rel="stylesheet">
     <title>Chapter 2</title>
@@ -56,31 +57,6 @@
       </section>
       </ul>
 <ul>
-    <section class="first-impression">
-       <li> <label for="first-impression" required>What are your first impressions of the group ?</label>
-         <br>
-          <input type="checkbox" name="interesting" id="interesting">
-          <label for="interesting">interesting</label>
-         <input type="checkbox" name="awkward" id="awkward">
-          <label for="awkward">awkward</label>
-         <input type="checkbox" name="boring" id="boring">
-          <label for="boring">boring</label>
-         <br>
-         <input type="checkbox" name="funny" id="funny">
-          <label for="funny">funny</label>
-      <input type="checkbox" name="exclusive" id="exclusive">
-          <label for="exclusive">exclusive</label>
-         <input type="checkbox" name="inclusive" id="inclusive">
-          <label for="inclusive">inclusive</label>
-         
-                 </section>
-  <section class="add-adjective">
-        <label for="add-adjective">Anything else ?</label>
-               <br>
-        <textarea id="add-adjective" name="add-adjectuve" rows="3" cols="40"></textarea>
-      </section>
-      </ul>
-<ul>
     <section class="easiness">
        <li><label for="easiness">How immersive was this chapter ?</label>
         <select name="easiness" id="easiness">
@@ -91,16 +67,42 @@
       <option value="not-very-immersive">not very immersive</option>
      <option value="not-immersive-at-all">not immersive at all</option>
          </select>
-          <br>
-          </ul>
+         </ul>
       </section>
+    <ul>
+       <section class="pov">
+          <li> <label for="pov">Did you notice changes in this chapter's narration due to a different POV ?</label>
+          <br>
+          <input type="radio" name="pov" id="yes-pov" value="yes-pov" required>
+          <label for="yes-pov">yes</label>
+          <input type="radio" name="pov" id="no-pov" value="no-pov">
+          <label for="no-pov">no</label>
+        </section>
+      </ul>
+<ul>
+       <section class="pov">
+          <li> <label for"pov">Did you notice some time period inaccuracy ?</label>
+       <br>
+       <p2>ex : slang word, objects, etc.</p2>
+       <br>
+        <input type="radio" name="pov" id="yes-pov" value="yes-pov" required>
+          <label for="yes-pov">yes</label>
+          <input type="radio" name="pov" id="no-pov" value="no-pov">
+          <label for="no-pov">no</label>
+        </section>
+      </ul>
+  <section class="why-for-inaccuracy">
+        <label for="why-for-inaccuracy">If you replied yes, which ones ?</label>
+               <br>
+        <textarea id="why-for-inaccuracy" name="why-for-inacurracy" rows="3" cols="40"></textarea>
+</section>
       <section class="flaws">
          <ul>
-        <label for="flaws">What flaws did you eventually notice in this chapter?</label>
+           <li><label for="flaws">What flaws did you eventually notice in this chapter?</label>
         <textarea id="flaws" name="flaws" rows="3" cols="40"></textarea>
         </ul>
       </section>
-      <br>
+     
          <hr>
       <h1>-Opinions-</h1>
         <p2>Try to answer even if you're not sure, it is just speculation :D</p2>
@@ -111,6 +113,7 @@
           <option value="nothing">select an answer</option>
             <option value="charles">Charles</option>
           <option value="darcy">Darcy</option>
+          <option value="harvey">Harvey</option>
       <option value="josephine">Josephine</option>  
       <option value="michelle">Michelle</option>
      <option value="ziggy">Ziggy</option>
@@ -126,11 +129,12 @@
 
       <ul>
     <section class="interraction">
-       <li> <label for="interraction">Between which two main characters was your favourite interraction ?</label>
+       <li> <label for="interraction">Between which two characters was your favourite interraction ?</label>
         <select name="interraction" id="interraction">
           <option value="nothing">select an answer</option>
             <option value="charles">Charles</option>
           <option value="darcy">Darcy</option>
+          <option value="harvey">Harvey</option>
       <option value="josephine">Josephine</option>  
       <option value="michelle">Michelle</option>
      <option value="ziggy">Ziggy</option>
@@ -140,6 +144,7 @@
         <option value="nothing">select an answer</option>
             <option value="charles">Charles</option>
           <option value="darcy">Darcy</option>
+        <option value="harvey">Harvey</option>
       <option value="josephine">Josephine</option>  
       <option value="michelle">Michelle</option>
      <option value="ziggy">Ziggy</option>
@@ -153,6 +158,7 @@
           <option value="nothing">select an answer</option>
             <option value="charles">Charles</option>
           <option value="darcy">Darcy</option>
+          <option value="josephine">Josephine</option>
       <option value="michelle">Michelle</option>
          </select>
           <br>
@@ -177,6 +183,7 @@
   <input type="submit" value="Submit">
             <section class="submit">
            </section>
+</form>
     <script>
  easinessSelect.addEventListener('change', () => {
   const easinessValue = easinessSelect.value;
